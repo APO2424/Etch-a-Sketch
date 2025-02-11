@@ -3,19 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Etch-a-Sketch</title>
-</head>
-
-    
-
-<body>
-    <h1>Etch-a-Sketch</h1>
-    <div class="grid-container">
-
-        
-    </div>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <title>Etch-a-Sketch</title>
+    
+</head>
+<body>
+    <div class="container">
+
+<div class="info">
+    <h1>Info!</h1>
+
+    <h2>It’s the one and only Etch A Sketch, 
+        the classic drawing toy that’s been challenging 
+        artists with its magic and mystery since 1960! 
+        Use the mouse to create anything your imagination dreams up, 
+        then give it a shake, shake, shake, using your mouse-wheel to erase and start all over 
+        again.
+    </h2>
+
+    <h3>The Etch A Sketch was introduced near the peak of the 
+        Baby Boom on 12 July 1960 for $2.99 (equivalent to $31 in 2023).
+        It went on to sell 600,000 units that year and is one of the 
+        best known toys of that era. In 1998, it was inducted into the 
+        National Toy Hall of Fame at The Strong, in Rochester, New York. 
+        In 2003, the Toy Industry Association named Etch A Sketch one of 
+        the 100 most memorable toys of the 20th century. The Etch A Sketch 
+        has since sold over 100 million units worldwide!
+    </h3>
+
+    <h1>TRY IT!</h1>
+    <h3>Enter how many total squares you would like for your grid in the field box,
+        then press enter to create your grid!
+        Press Erase! to erase your grid and start all over again.
+    </h3>
+
+</div>
+    <div class="device">
+        <h1 class="device-title">Etch A Sketch</h1>
+         <div class="grid-container"></div>
+         <button class="reset-button">Erase!</button>
+         <div class="knobs-container">
+            <div class="knobs"></div>
+            <input class="amount-of-SPS" placeholder="How Many Total Squares?"
+            onkeypress="clickPress(event)">
+            <div class="knobs"></div>
+         </div>
+    </div>
+</div>
+<script src="etch.js"></script>
 </body>
 </html>
